@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="logo">
+        <a href="#"><img src="image/logo.jpg" alt="it's me Rabi Bhagat"></a>
+   
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+
+    <div class="container">
+        <h1>Contact Me.</h1>
+        <p>Here's how to reach me, looking forward to talk with you all.</p>
+        <p>Inquiries via email at <a href="mailto:rabibhagat789@gmail.com">rabibahagat789@gmailcom.com</a>  <br>or via socials below:</p>
+        <ul>
+            <li> Github:-<a href="https://github.com/Rabi-Bhagat" target="_blank">https://github.com/Rabi-Bhagat </a> </li>
+            <li>linkedin"-<a href="https://www.linkedin.com/in/rabi-bhagat789/" target="_blank">https://www.linkedin.com/in/rabi-bhagat789/</a> </li>
+            <li>Telegram"-<a href="https://t.me/@Rabi_Bhagat" target="_blank">https://t.me/@Rabi_Bhagat</a> </li>
+            <li>facebook"-<a href="https://www.facebook.com/rabi.bhagat.313/" target="_blank">https://www.facebook.com/rabi.bhagat.313</a> </li>
+        </ul>
+        <p>
+            Here is my Resume :-
+            <a id="resume-link" href="RESUME.pdf" target="_blank">
+                <br> View my resume in pdf format:
+            </a>
+        </p>
+        
+        <script>
+            document.getElementById("resume-link").addEventListener("click", function(event) {
+                event.preventDefault(); 
+                const link = document.createElement("a");
+                link.href = "resume.pdf";
+                link.download = "Rabi_Bhagat_Resume.pdf"; 
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+        
+</body>
+</html>
